@@ -12,6 +12,7 @@ import { Day10 } from './Day10';
 import { Day11 } from './Day11';
 import { Day12 } from './Day12';
 import { Day13 } from './Day13';
+import { Day14 } from './Day14';
 
 function getLatestDay() {
   const files = fs.readdirSync(__dirname);
@@ -47,6 +48,8 @@ function run() {
     case 11: return new Day11().runApp();
     case 12: return new Day12().runApp();
     case 13: return new Day13().runApp();
+    case 14: return new Day14().runApp();
+
     default: console.error("Invalid day");
 
   }
